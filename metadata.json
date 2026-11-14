@@ -1,0 +1,6 @@
+{
+  "name": "Mahadev Attendance",
+  "description": "Attendance, daily overtime, and payroll salary manager with cloud sync, CSV export, JSON backup/restore, and printable payslip reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

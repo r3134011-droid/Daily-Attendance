@@ -1,0 +1,116 @@
+{
+  "entities": {
+    "PayrollSettings": {
+      "title": "PayrollSettings",
+      "description": "User payroll configuration including cycle start day, monthly basic salary, OT hourly rate, and statutory/advance deductions.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Authenticated Firebase UID of the owner."
+        },
+        "startDay": {
+          "type": "integer",
+          "description": "Payroll cycle start day of month (1 to 31)."
+        },
+        "salary": {
+          "type": "number",
+          "description": "Monthly basic salary in INR."
+        },
+        "otRate": {
+          "type": "number",
+          "description": "Overtime rate per hour in INR."
+        },
+        "pf": {
+          "type": "number",
+          "description": "Provident Fund deduction in INR."
+        },
+        "esi": {
+          "type": "number",
+          "description": "ESI deduction in INR."
+        },
+        "advance": {
+          "type": "number",
+          "description": "Other deduction or salary advance in INR."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server-generated creation timestamp via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server-generated update timestamp via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "startDay",
+        "salary",
+        "otRate",
+        "pf",
+        "esi",
+        "advance",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "AttendanceRecord": {
+      "title": "AttendanceRecord",
+      "description": "Daily attendance status and overtime hours for a specific calendar date.",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Authenticated Firebase UID of the owner."
+        },
+        "date": {
+          "type": "string",
+          "description": "ISO date key YYYY-MM-DD matching the document ID."
+        },
+        "status": {
+          "type": "string",
+          "enum": ["", "P", "A", "H", "W"],
+          "description": "Attendance status code: empty, P (Present), A (Absent), H (Holiday), W (Weekly Off)."
+        },
+        "otHours": {
+          "type": "number",
+          "description": "Daily overtime hours worked (0 to 24)."
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server-generated creation timestamp via FieldValue.serverTimestamp()."
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Server-generated update timestamp via FieldValue.serverTimestamp()."
+        }
+      },
+      "required": [
+        "userId",
+        "date",
+        "status",
+        "otHours",
+        "createdAt",
+        "updatedAt"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/payroll/{settingId}": {
+      "schema": {
+        "$ref": "#/entities/PayrollSettings"
+      },
+      "description": "Per-user payroll configuration document (settingId = 'settings')."
+    },
+    "/users/{userId}/attendance/{dateKey}": {
+      "schema": {
+        "$ref": "#/entities/AttendanceRecord"
+      },
+      "description": "Per-user daily attendance and overtime entries keyed by YYYY-MM-DD."
+    }
+  }
+}

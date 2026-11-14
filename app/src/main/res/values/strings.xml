@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Mahadev Attendance</string>
+    <string name="app_header_title">MY ATTENDANCE MANAGER</string>
+    <string name="app_header_subtitle">Attendance • Daily Overtime • Salary Calculator</string>
+    <string name="app_credit_badge">Developed by Mahadev</string>
+    <string name="app_footer">MY ATTENDANCE MANAGER • Developed by Mahadev</string>
+
+    <string name="cd_hero_banner">Payroll calendar and overtime overview</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="auth_feature_attendance_title">Visual Attendance Calendar</string>
+    <string name="auth_feature_attendance_desc">Log Present, Absent, Holiday, Weekly Off, and daily OT hours in one tap.</string>
+    <string name="auth_feature_salary_title">Instant Payroll Breakdown</string>
+    <string name="auth_feature_salary_desc">Auto-calculates per-day earnings, overtime pay, PF, ESI, and net salary.</string>
+    <string name="auth_feature_sync_title">Cloud Sync &amp; Portable Backups</string>
+    <string name="auth_feature_sync_desc">Synced securely to your Google account with CSV, JSON backup, and PDF payslips.</string>
+
+    <string name="nav_calendar">Calendar</string>
+    <string name="nav_payslip">Payslip</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="today_section_title">Today\'s Date</string>
+    <string name="go_to_current_month">Go to Current Month</string>
+    <string name="select_payroll_month">Select Payroll Month</string>
+    <string name="attendance_calendar_title">Attendance Calendar</string>
+    <string name="attendance_calendar_hint">Tap any date to enter attendance status and overtime hours.</string>
+
+    <string name="legend_present">Present</string>
+    <string name="legend_absent">Absent</string>
+    <string name="legend_holiday">Holiday</string>
+    <string name="legend_weekly_off">Weekly Off</string>
+
+    <string name="daily_entry_title">Daily Attendance Entry</string>
+    <string name="attendance_status_label">Attendance Status</string>
+    <string name="overtime_hours_label">Overtime Hours</string>
+    <string name="overtime_hours_placeholder">e.g. 2 or 2.5</string>
+    <string name="save_attendance_ot">Save Attendance + OT</string>
+    <string name="delete_date_entry">Delete This Date\'s Entry</string>
+    <string name="close_label">Close</string>
+
+    <string name="attendance_summary_title">Attendance Summary</string>
+    <string name="salary_calculator_title">Salary Calculator</string>
+    <string name="calculate_salary">Recalculate Salary</string>
+    <string name="print_save_pdf">Print / Save as PDF</string>
+    <string name="payroll_disclaimer">Confirm payroll rules and actual statutory deductions with your employer.</string>
+
+    <string name="payroll_settings_title">Payroll Settings</string>
+    <string name="select_year_label">Select Year</string>
+    <string name="payroll_start_day_label">Payroll Start Day</string>
+    <string name="monthly_basic_salary_label">Monthly Basic Salary (₹)</string>
+    <string name="ot_rate_per_hour_label">OT Rate per Hour (₹)</string>
+    <string name="pf_deduction_label">PF Deduction (₹)</string>
+    <string name="esi_deduction_label">ESI Deduction (₹)</string>
+    <string name="advance_deduction_label">Other Deduction / Advance (₹)</string>
+    <string name="save_payroll_settings">Save Payroll Settings</string>
+
+    <string name="data_tools_title">Data Tools</string>
+    <string name="export_csv">Export CSV</string>
+    <string name="backup_data">Backup Data</string>
+    <string name="restore_backup">Restore Backup</string>
+    <string name="print_report">Print Report</string>
+    <string name="clear_period_data">Clear This Payroll\'s Data</string>
+    <string name="cloud_storage_note">Your attendance and payroll settings sync automatically to your Google account. You can also export CSV reports or JSON backups anytime.</string>
+
+    <string name="account_section_title">Google Account</string>
+    <string name="sign_out">Sign Out</string>
+</resources>
